@@ -120,6 +120,51 @@ const clothesMen = [
 
 exports.clothesMen = clothesMen;
 
+
+const clothesWomen = [
+    {
+        "gender" : "f",
+        "name" : "femaleShirt1",
+        "type" : "shirt",
+        "price" : 45,
+        "size" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }
+    },
+    {
+        "gender" : "f",
+        "name" : "femaleShirt2",
+        "type" : "shirt",
+        "price" : 55,
+        "size" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }
+    },
+    {
+        "gender" : "f",
+        "name" : "femaleShirt3",
+        "type" : "shirt",
+        "price" : 50,
+        "size" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }
+    },
+]
+
+exports.clothesWomen = clothesWomen;
+
 const newsletter = [
     {
         "first" : "Mario",
