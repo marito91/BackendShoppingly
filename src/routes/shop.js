@@ -1,12 +1,12 @@
 const { Router } = require("express");
-const clothes = Router();
-const { clothesMen, clothesWomen, clothesKids } = require("../data");
+const shop = Router();
+const { shirts, pants, shoes, dresses, beachWear } = require("../data");
 
 /**
  * 1)
  * Name : Load Clothes Men
  * Method : GET
- * Route : /shopping_men
+ * Route : /men
  */
 
 
@@ -16,7 +16,7 @@ const { clothesMen, clothesWomen, clothesKids } = require("../data");
  * 2)
  * Name : Load Clothes Women
  * Method : GET
- * Route : /shopping_women
+ * Route : /women
  */
 
 
@@ -26,5 +26,8 @@ const { clothesMen, clothesWomen, clothesKids } = require("../data");
  * 3)
  * Name : Load Clothes Kids
  * Method : GET
- * Route : /shopping_kids
+ * Route : /kids
  */
+
+
+exports.shop = shop;

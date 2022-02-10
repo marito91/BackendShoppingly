@@ -8,14 +8,13 @@ const cors = require("cors");
 const Usuario = require("./modelos/usuarioModel");
 const Orden = require("./modelos/orden");
 const Puerto = require("./modelos/puerto");
-
-
-
-// Se importan las rutas principales donde se almacenan las APIs respectivas
-const { userRutas } = require("./rutas/userRutas")
-const { ordenesRutas } = require("./rutas/ordenesRutas")
-const { puertosRutas } = require("./rutas/puertosRutas")
 */
+
+
+// Main routes for APIs
+const { shop } = require("./routes/shop")
+
+
         
 const app = express();
 app.use(cors()); // Middleware CORS
@@ -23,17 +22,16 @@ app.use(express.json()) // Middleware convertir json
 app.use(express.urlencoded({ extended: true })); // Codifica la informacion que viene por el cliente en la barra de busqueda del navegador
 
 
-// Distribucion de Rutas
-//require("dotenv").config();
+// Route distribution
+require("dotenv").config();
+
+
+// APIs 
+app.use("/shop", shop);
+
 
 /*
-// APIs 
-app.use("/user", userRutas);
-app.use("/ordenes", ordenesRutas);
-app.use("/puertos", puertosRutas);
-
-
-// Se conecta la aplicación a Base de Datos
+// Database connection
 mongoose.connect(process.env.MONGODB_SERVER_URL)
 .then(res => console.log("Conectado a base de datos"))
 .catch(error => console.log(error));

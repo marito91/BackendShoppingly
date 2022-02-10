@@ -1,10 +1,18 @@
-const clothesMen = [
+/**
+ * Shirt
+ * Pants
+ * Beachwear
+ * Shoes
+ * Dress
+ */
+
+const shirts = [
     {
         "gender" : "m",
         "name" : "shirt1",
         "type" : "shirt",
         "price" : 25,
-        "size" : {
+        "stock" : {
             "xs" : 20,
             "s" : 20,
             "m" : 35,
@@ -17,7 +25,7 @@ const clothesMen = [
         "name" : "shirt2",
         "type" : "shirt",
         "price" : 30,
-        "size" : {
+        "stock" : {
             "xs" : 20,
             "s" : 20,
             "m" : 35,
@@ -30,7 +38,7 @@ const clothesMen = [
         "name" : "shirt3",
         "type" : "shirt",
         "price" : 28,
-        "size" : {
+        "stock" : {
             "xs" : 20,
             "s" : 20,
             "m" : 35,
@@ -38,96 +46,12 @@ const clothesMen = [
             "xl" : 20
         }
     },
-    {
-        "gender" : "m",
-        "name" : "pants1",
-        "type" : "pants",
-        "price" : 40,
-        "size" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
-        }
-    },
-    {
-        "gender" : "m",
-        "name" : "pants2",
-        "type" : "pants",
-        "price" : 35,
-        "size" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
-        }
-    },
-    {
-        "gender" : "m",
-        "name" : "pants3",
-        "type" : "pants",
-        "price" : 37,
-        "size" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
-        }
-    },
-    {
-        "gender" : "m",
-        "name" : "shoes1",
-        "type" : "shoes",
-        "price" : 60,
-        "size" : {
-            "8" : 20,
-            "9" : 20,
-            "10" : 35,
-            "11" : 30,
-            "12" : 20
-        }
-    },
-    {
-        "gender" : "m",
-        "name" : "shoes2",
-        "type" : "shoes",
-        "price" : 65,
-        "size" : {
-            "8" : 20,
-            "9" : 20,
-            "10" : 35,
-            "11" : 30,
-            "12" : 20
-        }
-    },
-    {
-        "gender" : "m",
-        "name" : "shoes3",
-        "type" : "shoes",
-        "price" : 55,
-        "size" : {
-            "8" : 20,
-            "9" : 20,
-            "10" : 35,
-            "11" : 30,
-            "12" : 20
-        }
-    }
-]
-
-exports.clothesMen = clothesMen;
-
-
-const clothesWomen = [
     {
         "gender" : "f",
         "name" : "femaleShirt1",
         "type" : "shirt",
         "price" : 45,
-        "size" : {
+        "stock" : {
             "xs" : 20,
             "s" : 20,
             "m" : 35,
@@ -140,7 +64,7 @@ const clothesWomen = [
         "name" : "femaleShirt2",
         "type" : "shirt",
         "price" : 55,
-        "size" : {
+        "stock" : {
             "xs" : 20,
             "s" : 20,
             "m" : 35,
@@ -153,7 +77,7 @@ const clothesWomen = [
         "name" : "femaleShirt3",
         "type" : "shirt",
         "price" : 50,
-        "size" : {
+        "stock" : {
             "xs" : 20,
             "s" : 20,
             "m" : 35,
@@ -161,9 +85,435 @@ const clothesWomen = [
             "xl" : 20
         }
     },
+    {
+        "gender" : "k",
+        "name" : "kidsShirt1",
+        "type" : "shirt",
+        "price" : 25,
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }
+    },
+    {
+        "gender" : "k",
+        "name" : "kidsShirt2",
+        "type" : "shirt",
+        "price" : 30,
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }
+    },
+    {
+        "gender" : "k",
+        "name" : "kidsShirt3",
+        "type" : "shirt",
+        "price" : 27,
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }
+    },
+
 ]
 
-exports.clothesWomen = clothesWomen;
+exports.shirts = shirts;
+
+
+const pants = [
+    {
+        "gender" : "m",
+        "name" : "pants1",
+        "type" : "pants",
+        "price" : 40,
+        "stock" : {
+            "28" : 20,
+            "30" : 20,
+            "32" : 35,
+            "34" : 30,
+            "36" : 20,
+            "38" : 15
+        }
+    },
+    {
+        "gender" : "m",
+        "name" : "pants2",
+        "type" : "pants",
+        "price" : 35,
+        "stock" : {
+            "28" : 20,
+            "30" : 20,
+            "32" : 35,
+            "34" : 30,
+            "36" : 20,
+            "38" : 15
+        }
+    },
+    {
+        "gender" : "m",
+        "name" : "pants3",
+        "type" : "pants",
+        "price" : 37,
+        "stock" : {
+            "28" : 20,
+            "30" : 20,
+            "32" : 35,
+            "34" : 30,
+            "36" : 20,
+            "38" : 15
+        }
+    },
+    {
+        "gender" : "f",
+        "name" : "femalePants1",
+        "type" : "pants",
+        "price" : 60,
+        "stock" : {
+            "2" : 20,
+            "4" : 20,
+            "6" : 35,
+            "8" : 30,
+            "10" : 20,
+            "12" : 15
+        }
+    },
+    {
+        "gender" : "f",
+        "name" : "femalePants2",
+        "type" : "pants",
+        "price" : 65,
+        "stock" : {
+            "2" : 20,
+            "4" : 20,
+            "6" : 35,
+            "8" : 30,
+            "10" : 20,
+            "12" : 15
+        }
+    },
+    {
+        "gender" : "f",
+        "name" : "femalePants3",
+        "type" : "pants",
+        "price" : 63,
+        "stock" : {
+            "2" : 20,
+            "4" : 20,
+            "6" : 35,
+            "8" : 30,
+            "10" : 20,
+            "12" : 15
+        }
+    },
+    {
+        "gender" : "k",
+        "name" : "kidsPants1",
+        "type" : "pants",
+        "price" : 30,
+        "stock" : {
+            "10" : 20,
+            "12" : 20,
+            "14" : 35,
+            "16" : 30,
+            "18" : 20,
+        }
+    },
+    {
+        "gender" : "k",
+        "name" : "kidsPants2",
+        "type" : "pants",
+        "price" : 33,
+        "stock" : {
+            "10" : 20,
+            "12" : 20,
+            "14" : 35,
+            "16" : 30,
+            "18" : 20,
+        }
+    },
+    {
+        "gender" : "k",
+        "name" : "kidsPants3",
+        "type" : "pants",
+        "price" : 28,
+        "stock" : {
+            "10" : 20,
+            "12" : 20,
+            "14" : 35,
+            "16" : 30,
+            "18" : 20,
+        }
+    }
+
+]
+
+
+
+exports.pants = pants;
+
+
+
+
+const shoes = [
+
+    {
+        "gender" : "m",
+        "name" : "shoes1",
+        "type" : "shoes",
+        "price" : 60,
+        "stock" : {
+            "8" : 20,
+            "9" : 20,
+            "10" : 35,
+            "11" : 30,
+            "12" : 20
+        }
+    },
+    {
+        "gender" : "m",
+        "name" : "shoes2",
+        "type" : "shoes",
+        "price" : 65,
+        "stock" : {
+            "8" : 20,
+            "9" : 20,
+            "10" : 35,
+            "11" : 30,
+            "12" : 20
+        }
+    },
+    {
+        "gender" : "m",
+        "name" : "shoes3",
+        "type" : "shoes",
+        "price" : 55,
+        "stock" : {
+            "8" : 20,
+            "9" : 20,
+            "10" : 35,
+            "11" : 30,
+            "12" : 20
+        }
+    },
+    {
+        "gender" : "f",
+        "name" : "femaleShoes1",
+        "type" : "shoes",
+        "price" : 50,
+        "stock" : {
+            "5" : 20,
+            "6" : 20,
+            "7" : 35,
+            "8" : 30,
+            "9" : 20
+        }
+    },
+    {
+        "gender" : "f",
+        "name" : "femaleShoes2",
+        "type" : "shoes",
+        "price" : 54,
+        "stock" : {
+            "5" : 20,
+            "6" : 20,
+            "7" : 35,
+            "8" : 30,
+            "9" : 20
+        }
+    },
+    {
+        "gender" : "f",
+        "name" : "femaleShoes3",
+        "type" : "shoes",
+        "price" : 60,
+        "stock" : {
+            "5" : 20,
+            "6" : 20,
+            "7" : 35,
+            "8" : 30,
+            "9" : 20
+        }
+    },
+    {
+        "gender" : "k",
+        "name" : "kidsShoes1",
+        "type" : "shoes",
+        "price" : 20,
+        "stock" : {
+            "1" : 20,
+            "2" : 20,
+            "3" : 35,
+            "4" : 30,
+            "5" : 20
+        }
+    },
+    {
+        "gender" : "k",
+        "name" : "kidsShoes2",
+        "type" : "shoes",
+        "price" : 23,
+        "stock" : {
+            "1" : 20,
+            "2" : 20,
+            "3" : 35,
+            "4" : 30,
+            "5" : 20
+        }
+    },
+    {
+        "gender" : "k",
+        "name" : "kidsShoes3",
+        "type" : "shoes",
+        "price" : 25,
+        "stock" : {
+            "1" : 20,
+            "2" : 20,
+            "3" : 35,
+            "4" : 30,
+            "5" : 20
+        }
+    }
+]
+
+exports.shoes = shoes;
+
+
+const dresses = [
+    {
+        "gender" : "f",
+        "name" : "dress1",
+        "type" : "dresses",
+        "price" : 70,
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }
+    },
+    {
+        "gender" : "f",
+        "name" : "dress2",
+        "type" : "dresses",
+        "price" : 75,
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }
+    },
+    {
+        "gender" : "f",
+        "name" : "dress3",
+        "type" : "dresses",
+        "price" : 75,
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }
+    }
+]
+
+exports.dresses = dresses;
+
+const beachWear = [
+    {
+        "gender" : "m",
+        "name" : "swimwear1",
+        "type" : "beachwear",
+        "price" : 45,
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }
+    },
+    {
+        "gender" : "m",
+        "name" : "swimwear2",
+        "type" : "beachwear",
+        "price" : 40,
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }
+    },
+    {
+        "gender" : "m",
+        "name" : "swimwear3",
+        "type" : "beachwear",
+        "price" : 42,
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }
+    },
+    {
+        "gender" : "f",
+        "name" : "bikini1",
+        "type" : "beachwear",
+        "price" : 55,
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }
+    },
+    {
+        "gender" : "f",
+        "name" : "bikini2",
+        "type" : "beachwear",
+        "price" : 60,
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }
+    },
+    {
+        "gender" : "f",
+        "name" : "bikini3",
+        "type" : "beachwear",
+        "price" : 65,
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }
+    }
+]
+
+exports.beachWear = beachWear;
 
 const newsletter = [
     {
