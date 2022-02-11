@@ -47,6 +47,45 @@ const shirts = [
         }
     },
     {
+        "gender" : "m",
+        "name" : "shirt4",
+        "type" : "shirt",
+        "price" : 31,
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }
+    },
+    {
+        "gender" : "m",
+        "name" : "shirt5",
+        "type" : "shirt",
+        "price" : 33,
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }
+    },
+    {
+        "gender" : "m",
+        "name" : "shirt6",
+        "type" : "shirt",
+        "price" : 29,
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }
+    },
+    {
         "gender" : "f",
         "name" : "femaleShirt1",
         "type" : "shirt",

@@ -16,16 +16,6 @@ shop.get("/men/shirts", function(req, res) {
     console.log(mensShirtsCatalogue);
     return res.send({ status:"ok", msg: "Men's shirts found", mensShirtsCatalogue });
     
-
-/*    
-    shirts.find({}, (error, garment) => {
-        if (error) {
-            return res.send({ status:"Error", msg: "Couldn't find any shirts" })
-        } else {
-            const mensShirtCatalogue = garment.map(g => g);
-            console.log(mensShirtCatalogue)
-        }
-    }) */
 })
 
 
