@@ -9,7 +9,7 @@
 const shirts = [
     {
         "gender" : "m",
-        "name" : "shirt1",
+        "name" : "North Side Jacket",
         "type" : "shirt",
         "price" : 25,
         "stock" : {
@@ -18,24 +18,13 @@ const shirts = [
             "m" : 35,
             "l" : 30,
             "xl" : 20
-        }
+        },
+        "img1" : "blue1",
+        "img2" : "blue2"
     },
     {
         "gender" : "m",
-        "name" : "shirt2",
-        "type" : "shirt",
-        "price" : 30,
-        "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
-        }
-    },
-    {
-        "gender" : "m",
-        "name" : "shirt3",
+        "name" : "Black Hoodie",
         "type" : "shirt",
         "price" : 28,
         "stock" : {
@@ -44,24 +33,28 @@ const shirts = [
             "m" : 35,
             "l" : 30,
             "xl" : 20
-        }
+        },
+        "img1" : "black1",
+        "img2" : "black2"
     },
     {
         "gender" : "m",
-        "name" : "shirt4",
+        "name" : "Bone Shirt",
         "type" : "shirt",
-        "price" : 31,
+        "price" : 35,
         "stock" : {
             "xs" : 20,
             "s" : 20,
             "m" : 35,
             "l" : 30,
             "xl" : 20
-        }
+        },
+        "img1" : "white1",
+        "img2" : "white2"
     },
     {
         "gender" : "m",
-        "name" : "shirt5",
+        "name" : "Zeb Shirt",
         "type" : "shirt",
         "price" : 33,
         "stock" : {
@@ -70,20 +63,39 @@ const shirts = [
             "m" : 35,
             "l" : 30,
             "xl" : 20
-        }
+        },
+        "img1" : "zebra1",
+        "img2" : "zebra2"
     },
     {
         "gender" : "m",
-        "name" : "shirt6",
+        "name" : "Black Long Sleeves",
         "type" : "shirt",
-        "price" : 29,
+        "price" : 31,
         "stock" : {
             "xs" : 20,
             "s" : 20,
             "m" : 35,
             "l" : 30,
             "xl" : 20
-        }
+        },
+        "img1" : "black3",
+        "img2" : "black4"
+    },
+    {
+        "gender" : "m",
+        "name" : "Fancy Suit",
+        "type" : "shirt",
+        "price" : 40,
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        },
+        "img1" : "fancy1",
+        "img2" : "fancy2"
     },
     {
         "gender" : "f",
