@@ -6,18 +6,34 @@
  * Dress
  */
 
+
 const shirts = [
     {
         "gender" : "m",
-        "name" : "North Side Jacket",
+        "name" : "North Side",
         "type" : "shirt",
         "price" : 25,
         "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
+            "xs" : {
+                "id" : "XS",
+                "quantity" : 20
+            },
+            "s" : {
+                "id" : "S",
+                "quantity" : 20
+            },
+            "m" : {
+                "id" : "M",
+                "quantity" : 35
+            },
+            "l" : {
+                "id" : "L",
+                "quantity" : 30
+            },
+            "xl" : {
+                "id" : "XL",
+                "quantity" : 20
+            }
         },
         "img1" : "blue1",
         "img2" : "blue2"
@@ -28,11 +44,26 @@ const shirts = [
         "type" : "shirt",
         "price" : 28,
         "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
+            "xs" : {
+                "id" : "XS",
+                "quantity" : 20
+            },
+            "s" : {
+                "id" : "S",
+                "quantity" : 20
+            },
+            "m" : {
+                "id" : "M",
+                "quantity" : 35
+            },
+            "l" : {
+                "id" : "L",
+                "quantity" : 30
+            },
+            "xl" : {
+                "id" : "XL",
+                "quantity" : 20
+            }
         },
         "img1" : "black1",
         "img2" : "black2"
@@ -43,11 +74,26 @@ const shirts = [
         "type" : "shirt",
         "price" : 35,
         "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
+            "xs" : {
+                "id" : "XS",
+                "quantity" : 20
+            },
+            "s" : {
+                "id" : "S",
+                "quantity" : 20
+            },
+            "m" : {
+                "id" : "M",
+                "quantity" : 35
+            },
+            "l" : {
+                "id" : "L",
+                "quantity" : 30
+            },
+            "xl" : {
+                "id" : "XL",
+                "quantity" : 20
+            }
         },
         "img1" : "white1",
         "img2" : "white2"
@@ -58,26 +104,56 @@ const shirts = [
         "type" : "shirt",
         "price" : 33,
         "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
+            "xs" : {
+                "id" : "XS",
+                "quantity" : 20
+            },
+            "s" : {
+                "id" : "S",
+                "quantity" : 20
+            },
+            "m" : {
+                "id" : "M",
+                "quantity" : 35
+            },
+            "l" : {
+                "id" : "L",
+                "quantity" : 30
+            },
+            "xl" : {
+                "id" : "XL",
+                "quantity" : 20
+            }
         },
         "img1" : "zebra1",
         "img2" : "zebra2"
     },
     {
         "gender" : "m",
-        "name" : "Black Long Sleeves",
+        "name" : "Black Sleever",
         "type" : "shirt",
         "price" : 31,
         "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
+            "xs" : {
+                "id" : "XS",
+                "quantity" : 20
+            },
+            "s" : {
+                "id" : "S",
+                "quantity" : 20
+            },
+            "m" : {
+                "id" : "M",
+                "quantity" : 35
+            },
+            "l" : {
+                "id" : "L",
+                "quantity" : 30
+            },
+            "xl" : {
+                "id" : "XL",
+                "quantity" : 20
+            }
         },
         "img1" : "black3",
         "img2" : "black4"
@@ -88,11 +164,26 @@ const shirts = [
         "type" : "shirt",
         "price" : 40,
         "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
+            "xs" : {
+                "id" : "XS",
+                "quantity" : 20
+            },
+            "s" : {
+                "id" : "S",
+                "quantity" : 20
+            },
+            "m" : {
+                "id" : "M",
+                "quantity" : 35
+            },
+            "l" : {
+                "id" : "L",
+                "quantity" : 30
+            },
+            "xl" : {
+                "id" : "XL",
+                "quantity" : 20
+            }
         },
         "img1" : "fancy1",
         "img2" : "fancy2"
@@ -103,11 +194,26 @@ const shirts = [
         "type" : "shirt",
         "price" : 45,
         "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
+            "xs" : {
+                "id" : "XS",
+                "quantity" : 20
+            },
+            "s" : {
+                "id" : "S",
+                "quantity" : 20
+            },
+            "m" : {
+                "id" : "M",
+                "quantity" : 35
+            },
+            "l" : {
+                "id" : "L",
+                "quantity" : 30
+            },
+            "xl" : {
+                "id" : "XL",
+                "quantity" : 20
+            }
         }
     },
     {
@@ -116,11 +222,26 @@ const shirts = [
         "type" : "shirt",
         "price" : 55,
         "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
+            "xs" : {
+                "id" : "XS",
+                "quantity" : 20
+            },
+            "s" : {
+                "id" : "S",
+                "quantity" : 20
+            },
+            "m" : {
+                "id" : "M",
+                "quantity" : 35
+            },
+            "l" : {
+                "id" : "L",
+                "quantity" : 30
+            },
+            "xl" : {
+                "id" : "XL",
+                "quantity" : 20
+            }
         }
     },
     {
@@ -129,11 +250,26 @@ const shirts = [
         "type" : "shirt",
         "price" : 50,
         "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
+            "xs" : {
+                "id" : "XS",
+                "quantity" : 20
+            },
+            "s" : {
+                "id" : "S",
+                "quantity" : 20
+            },
+            "m" : {
+                "id" : "M",
+                "quantity" : 35
+            },
+            "l" : {
+                "id" : "L",
+                "quantity" : 30
+            },
+            "xl" : {
+                "id" : "XL",
+                "quantity" : 20
+            }
         }
     },
     {
@@ -142,11 +278,26 @@ const shirts = [
         "type" : "shirt",
         "price" : 25,
         "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
+            "xs" : {
+                "id" : "XS",
+                "quantity" : 20
+            },
+            "s" : {
+                "id" : "S",
+                "quantity" : 20
+            },
+            "m" : {
+                "id" : "M",
+                "quantity" : 35
+            },
+            "l" : {
+                "id" : "L",
+                "quantity" : 30
+            },
+            "xl" : {
+                "id" : "XL",
+                "quantity" : 20
+            }
         }
     },
     {
@@ -155,11 +306,26 @@ const shirts = [
         "type" : "shirt",
         "price" : 30,
         "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
+            "xs" : {
+                "id" : "XS",
+                "quantity" : 20
+            },
+            "s" : {
+                "id" : "S",
+                "quantity" : 20
+            },
+            "m" : {
+                "id" : "M",
+                "quantity" : 35
+            },
+            "l" : {
+                "id" : "L",
+                "quantity" : 30
+            },
+            "xl" : {
+                "id" : "XL",
+                "quantity" : 20
+            }
         }
     },
     {
@@ -168,11 +334,26 @@ const shirts = [
         "type" : "shirt",
         "price" : 27,
         "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
+            "xs" : {
+                "id" : "XS",
+                "quantity" : 20
+            },
+            "s" : {
+                "id" : "S",
+                "quantity" : 20
+            },
+            "m" : {
+                "id" : "M",
+                "quantity" : 35
+            },
+            "l" : {
+                "id" : "L",
+                "quantity" : 30
+            },
+            "xl" : {
+                "id" : "XL",
+                "quantity" : 20
+            }
         }
     },
 
