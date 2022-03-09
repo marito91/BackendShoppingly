@@ -10,11 +10,25 @@ const { shirts, pants, shoes, dresses, beachWear } = require("../data");
  */
 
 shop.get("/men/shirts", function(req, res) {
-
     
     const mensShirtsCatalogue = shirts.filter(shirt => shirt.gender === "m");
-    console.log(mensShirtsCatalogue);
+    //console.log(mensShirtsCatalogue);
     return res.send({ status:"ok", msg: "Men's shirts found", mensShirtsCatalogue });
+    
+})
+
+
+/**
+ * 2)
+ * Name : Load Pants Men
+ * Method : GET
+ * Route : /men
+ */
+
+shop.get("/men/pants", function(req, res) {
+    
+    const mensPantsCatalogue = pants.filter(item => item.gender === "m");
+    return res.send({ status:"ok", msg: "Men's pants found", mensPantsCatalogue });
     
 })
 
@@ -22,7 +36,7 @@ shop.get("/men/shirts", function(req, res) {
 
 
 /**
- * 2)
+ * X)
  * Name : Load Clothes Women
  * Method : GET
  * Route : /women
@@ -32,7 +46,7 @@ shop.get("/men/shirts", function(req, res) {
 
 
 /**
- * 3)
+ * X)
  * Name : Load Clothes Kids
  * Method : GET
  * Route : /kids
