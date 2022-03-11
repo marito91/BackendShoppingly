@@ -36,8 +36,8 @@ const shirts = [
                 "quantity" : 20
             }
         },
-        "img1" : "blue1",
-        "img2" : "blue2"
+        "img1" : "men1a",
+        "img2" : "men1b"
     },
     {
         "id" : 2,
@@ -67,8 +67,8 @@ const shirts = [
                 "quantity" : 20
             }
         },
-        "img1" : "black1",
-        "img2" : "black2"
+        "img1" : "men2a",
+        "img2" : "men2b"
     },
     {
         "id" : 3,
@@ -98,8 +98,8 @@ const shirts = [
                 "quantity" : 20
             }
         },
-        "img1" : "white1",
-        "img2" : "white2"
+        "img1" : "men3a",
+        "img2" : "men3b"
     },
     {
         "id" : 4,
@@ -129,8 +129,8 @@ const shirts = [
                 "quantity" : 20
             }
         },
-        "img1" : "zebra1",
-        "img2" : "zebra2"
+        "img1" : "men4a",
+        "img2" : "men4b"
     },
     {
         "id" : 5,
@@ -160,8 +160,8 @@ const shirts = [
                 "quantity" : 20
             }
         },
-        "img1" : "black3",
-        "img2" : "black4"
+        "img1" : "men5a",
+        "img2" : "men5b"
     },
     {
         "id" : 6,
@@ -191,8 +191,8 @@ const shirts = [
                 "quantity" : 20
             }
         },
-        "img1" : "fancy1",
-        "img2" : "fancy2"
+        "img1" : "men6a",
+        "img2" : "men6b"
     },
     {
         "id" : 7,
@@ -406,7 +406,9 @@ const pants = [
                 "size" : 38,
                 "quantity" : 15   
             }
-        }
+        },
+        "img1" : "men3a",
+        "img2" : "men3b"
     },
     {
         "id" : 14,
@@ -439,7 +441,9 @@ const pants = [
                 "size" : 38,
                 "quantity" : 15   
             }
-        }
+        },
+        "img1" : "men3a",
+        "img2" : "men3b"
     },
     {
         "id" : 15,
@@ -472,10 +476,117 @@ const pants = [
                 "size" : 38,
                 "quantity" : 15   
             }
-        }
+        },
+        "img1" : "men3a",
+        "img2" : "men3b"
     },
     {
         "id" : 16,
+        "gender" : "m",
+        "name" : "pants1",
+        "type" : "pants",
+        "price" : 40,
+        "stock" : {
+            "28" : {
+                "size" : 28,
+                "quantity" : 20   
+            },
+            "30" : {
+                "size" : 30,
+                "quantity" : 20   
+            },
+            "32" : {
+                "size" : 32,
+                "quantity" : 35   
+            },
+            "34" : {
+                "size" : 34,
+                "quantity" : 30   
+            },
+            "36" : {
+                "size" : 36,
+                "quantity" : 20   
+            },
+            "38" : {
+                "size" : 38,
+                "quantity" : 15   
+            }
+        },
+        "img1" : "men3a",
+        "img2" : "men3b"
+    },
+    {
+        "id" : 17,
+        "gender" : "m",
+        "name" : "pants2",
+        "type" : "pants",
+        "price" : 35,
+        "stock" : {
+            "28" : {
+                "size" : 28,
+                "quantity" : 20   
+            },
+            "30" : {
+                "size" : 30,
+                "quantity" : 20   
+            },
+            "32" : {
+                "size" : 32,
+                "quantity" : 35   
+            },
+            "34" : {
+                "size" : 34,
+                "quantity" : 30   
+            },
+            "36" : {
+                "size" : 36,
+                "quantity" : 20   
+            },
+            "38" : {
+                "size" : 38,
+                "quantity" : 15   
+            }
+        },
+        "img1" : "men3a",
+        "img2" : "men3b"
+    },
+    {
+        "id" : 18,
+        "gender" : "m",
+        "name" : "pants3",
+        "type" : "pants",
+        "price" : 37,
+        "stock" : {
+            "28" : {
+                "size" : 28,
+                "quantity" : 20   
+            },
+            "30" : {
+                "size" : 30,
+                "quantity" : 20   
+            },
+            "32" : {
+                "size" : 32,
+                "quantity" : 35   
+            },
+            "34" : {
+                "size" : 34,
+                "quantity" : 30   
+            },
+            "36" : {
+                "size" : 36,
+                "quantity" : 20   
+            },
+            "38" : {
+                "size" : 38,
+                "quantity" : 15   
+            }
+        },
+        "img1" : "men3a",
+        "img2" : "men3b"
+    },
+    {
+        "id" : 19,
         "gender" : "f",
         "name" : "femalePants1",
         "type" : "pants",
@@ -490,7 +601,7 @@ const pants = [
         }
     },
     {
-        "id" : 17,
+        "id" : 20,
         "gender" : "f",
         "name" : "femalePants2",
         "type" : "pants",
@@ -505,7 +616,7 @@ const pants = [
         }
     },
     {
-        "id" : 18,
+        "id" : 21,
         "gender" : "f",
         "name" : "femalePants3",
         "type" : "pants",
@@ -520,7 +631,7 @@ const pants = [
         }
     },
     {
-        "id" : 19,
+        "id" : 22,
         "gender" : "k",
         "name" : "kidsPants1",
         "type" : "pants",
@@ -534,7 +645,7 @@ const pants = [
         }
     },
     {
-        "id" : 20,
+        "id" : 23,
         "gender" : "k",
         "name" : "kidsPants2",
         "type" : "pants",
@@ -548,7 +659,7 @@ const pants = [
         }
     },
     {
-        "id" : 21,
+        "id" : 24,
         "gender" : "k",
         "name" : "kidsPants3",
         "type" : "pants",
