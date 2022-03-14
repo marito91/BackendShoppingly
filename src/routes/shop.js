@@ -33,6 +33,21 @@ shop.get("/men/pants", function(req, res) {
 })
 
 
+/**
+ * 2)
+ * Name : Load Pants Men
+ * Method : GET
+ * Route : /men
+ */
+
+shop.get("/men/shoes", function(req, res) {
+    
+    const mensShoesCatalogue = shoes.filter(item => item.gender === "m");
+    return res.send({ status:"ok", msg: "Men's shoes found", mensShoesCatalogue });
+    
+})
+
+
 
 
 /**

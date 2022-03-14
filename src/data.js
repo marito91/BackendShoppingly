@@ -14,28 +14,14 @@ const shirts = [
         "name" : "North Side",
         "type" : "shirt",
         "price" : 25,
-        "stock" : {
-            "xs" : {
-                "size" : "XS",
-                "quantity" : 20
-            },
-            "s" : {
-                "size" : "S",
-                "quantity" : 20
-            },
-            "m" : {
-                "size" : "M",
-                "quantity" : 35
-            },
-            "l" : {
-                "size" : "L",
-                "quantity" : 30
-            },
-            "xl" : {
-                "size" : "XL",
-                "quantity" : 20
-            }
-        },
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }],
         "img1" : "men1a",
         "img2" : "men1b"
     },
@@ -45,28 +31,14 @@ const shirts = [
         "name" : "Black Hoodie",
         "type" : "shirt",
         "price" : 28,
-        "stock" : {
-            "xs" : {
-                "size" : "XS",
-                "quantity" : 20
-            },
-            "s" : {
-                "size" : "S",
-                "quantity" : 20
-            },
-            "m" : {
-                "size" : "M",
-                "quantity" : 35
-            },
-            "l" : {
-                "size" : "L",
-                "quantity" : 30
-            },
-            "xl" : {
-                "size" : "XL",
-                "quantity" : 20
-            }
-        },
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }],
         "img1" : "men2a",
         "img2" : "men2b"
     },
@@ -76,28 +48,14 @@ const shirts = [
         "name" : "Bone Shirt",
         "type" : "shirt",
         "price" : 35,
-        "stock" : {
-            "xs" : {
-                "size" : "XS",
-                "quantity" : 20
-            },
-            "s" : {
-                "size" : "S",
-                "quantity" : 20
-            },
-            "m" : {
-                "size" : "M",
-                "quantity" : 35
-            },
-            "l" : {
-                "size" : "L",
-                "quantity" : 30
-            },
-            "xl" : {
-                "size" : "XL",
-                "quantity" : 20
-            }
-        },
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }],
         "img1" : "men3a",
         "img2" : "men3b"
     },
@@ -107,28 +65,14 @@ const shirts = [
         "name" : "Zebra Shirt",
         "type" : "shirt",
         "price" : 33,
-        "stock" : {
-            "xs" : {
-                "size" : "XS",
-                "quantity" : 20
-            },
-            "s" : {
-                "size" : "S",
-                "quantity" : 20
-            },
-            "m" : {
-                "size" : "M",
-                "quantity" : 35
-            },
-            "l" : {
-                "size" : "L",
-                "quantity" : 30
-            },
-            "xl" : {
-                "size" : "XL",
-                "quantity" : 20
-            }
-        },
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }],
         "img1" : "men4a",
         "img2" : "men4b"
     },
@@ -138,28 +82,14 @@ const shirts = [
         "name" : "Black Sleever",
         "type" : "shirt",
         "price" : 31,
-        "stock" : {
-            "xs" : {
-                "size" : "XS",
-                "quantity" : 20
-            },
-            "s" : {
-                "size" : "S",
-                "quantity" : 20
-            },
-            "m" : {
-                "size" : "M",
-                "quantity" : 35
-            },
-            "l" : {
-                "size" : "L",
-                "quantity" : 30
-            },
-            "xl" : {
-                "size" : "XL",
-                "quantity" : 20
-            }
-        },
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }],
         "img1" : "men5a",
         "img2" : "men5b"
     },
@@ -169,28 +99,14 @@ const shirts = [
         "name" : "Fancy Suit",
         "type" : "shirt",
         "price" : 40,
-        "stock" : {
-            "xs" : {
-                "size" : "XS",
-                "quantity" : 20
-            },
-            "s" : {
-                "size" : "S",
-                "quantity" : 20
-            },
-            "m" : {
-                "size" : "M",
-                "quantity" : 35
-            },
-            "l" : {
-                "size" : "L",
-                "quantity" : 30
-            },
-            "xl" : {
-                "size" : "XL",
-                "quantity" : 20
-            }
-        },
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }],
         "img1" : "men6a",
         "img2" : "men6b"
     },
@@ -200,28 +116,14 @@ const shirts = [
         "name" : "femaleShirt1",
         "type" : "shirt",
         "price" : 45,
-        "stock" : {
-            "xs" : {
-                "size" : "XS",
-                "quantity" : 20
-            },
-            "s" : {
-                "size" : "S",
-                "quantity" : 20
-            },
-            "m" : {
-                "size" : "M",
-                "quantity" : 35
-            },
-            "l" : {
-                "size" : "L",
-                "quantity" : 30
-            },
-            "xl" : {
-                "size" : "XL",
-                "quantity" : 20
-            }
-        }
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }],
     },
     {
         "id" : 8,
@@ -229,28 +131,14 @@ const shirts = [
         "name" : "femaleShirt2",
         "type" : "shirt",
         "price" : 55,
-        "stock" : {
-            "xs" : {
-                "size" : "XS",
-                "quantity" : 20
-            },
-            "s" : {
-                "size" : "S",
-                "quantity" : 20
-            },
-            "m" : {
-                "size" : "M",
-                "quantity" : 35
-            },
-            "l" : {
-                "size" : "L",
-                "quantity" : 30
-            },
-            "xl" : {
-                "size" : "XL",
-                "quantity" : 20
-            }
-        }
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }],
     },
     {
         "id" : 9,
@@ -258,28 +146,14 @@ const shirts = [
         "name" : "femaleShirt3",
         "type" : "shirt",
         "price" : 50,
-        "stock" : {
-            "xs" : {
-                "size" : "XS",
-                "quantity" : 20
-            },
-            "s" : {
-                "size" : "S",
-                "quantity" : 20
-            },
-            "m" : {
-                "size" : "M",
-                "quantity" : 35
-            },
-            "l" : {
-                "size" : "L",
-                "quantity" : 30
-            },
-            "xl" : {
-                "size" : "XL",
-                "quantity" : 20
-            }
-        }
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }],
     },
     {
         "id" : 10,
@@ -287,28 +161,14 @@ const shirts = [
         "name" : "kidsShirt1",
         "type" : "shirt",
         "price" : 25,
-        "stock" : {
-            "xs" : {
-                "size" : "XS",
-                "quantity" : 20
-            },
-            "s" : {
-                "size" : "S",
-                "quantity" : 20
-            },
-            "m" : {
-                "size" : "M",
-                "quantity" : 35
-            },
-            "l" : {
-                "size" : "L",
-                "quantity" : 30
-            },
-            "xl" : {
-                "size" : "XL",
-                "quantity" : 20
-            }
-        }
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }],
     },
     {
         "id" : 11,
@@ -316,28 +176,14 @@ const shirts = [
         "name" : "kidsShirt2",
         "type" : "shirt",
         "price" : 30,
-        "stock" : {
-            "xs" : {
-                "size" : "XS",
-                "quantity" : 20
-            },
-            "s" : {
-                "size" : "S",
-                "quantity" : 20
-            },
-            "m" : {
-                "size" : "M",
-                "quantity" : 35
-            },
-            "l" : {
-                "size" : "L",
-                "quantity" : 30
-            },
-            "xl" : {
-                "size" : "XL",
-                "quantity" : 20
-            }
-        }
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }],
     },
     {
         "id" : 12,
@@ -345,28 +191,14 @@ const shirts = [
         "name" : "kidsShirt3",
         "type" : "shirt",
         "price" : 27,
-        "stock" : {
-            "xs" : {
-                "size" : "XS",
-                "quantity" : 20
-            },
-            "s" : {
-                "size" : "S",
-                "quantity" : 20
-            },
-            "m" : {
-                "size" : "M",
-                "quantity" : 35
-            },
-            "l" : {
-                "size" : "L",
-                "quantity" : 30
-            },
-            "xl" : {
-                "size" : "XL",
-                "quantity" : 20
-            }
-        }
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }]
     },
 
 ]
@@ -378,212 +210,110 @@ const pants = [
     {
         "id" : 13,
         "gender" : "m",
-        "name" : "pants1",
+        "name" : "Baggy Jeans",
         "type" : "pants",
         "price" : 40,
+        "sizes" : [28, 30, 32, 34, 36, 38],
         "stock" : {
-            "28" : {
-                "size" : 28,
-                "quantity" : 20   
-            },
-            "30" : {
-                "size" : 30,
-                "quantity" : 20   
-            },
-            "32" : {
-                "size" : 32,
-                "quantity" : 35   
-            },
-            "34" : {
-                "size" : 34,
-                "quantity" : 30   
-            },
-            "36" : {
-                "size" : 36,
-                "quantity" : 20   
-            },
-            "38" : {
-                "size" : 38,
-                "quantity" : 15   
-            }
+            "28" : 20,
+            "30" : 25,
+            "32" : 35,
+            "34" : 35,
+            "36" : 35,
+            "38" : 20
         },
-        "img1" : "men3a",
-        "img2" : "men3b"
+        "img1" : "men13a",
+        "img2" : "men13b"
     },
     {
         "id" : 14,
         "gender" : "m",
-        "name" : "pants2",
+        "name" : "Dark Pants",
         "type" : "pants",
         "price" : 35,
+        "sizes" : [28, 30, 32, 34, 36, 38],
         "stock" : {
-            "28" : {
-                "size" : 28,
-                "quantity" : 20   
-            },
-            "30" : {
-                "size" : 30,
-                "quantity" : 20   
-            },
-            "32" : {
-                "size" : 32,
-                "quantity" : 35   
-            },
-            "34" : {
-                "size" : 34,
-                "quantity" : 30   
-            },
-            "36" : {
-                "size" : 36,
-                "quantity" : 20   
-            },
-            "38" : {
-                "size" : 38,
-                "quantity" : 15   
-            }
+            "28" : 20,
+            "30" : 25,
+            "32" : 35,
+            "34" : 35,
+            "36" : 35,
+            "38" : 20
         },
-        "img1" : "men3a",
-        "img2" : "men3b"
+        "img1" : "men14a",
+        "img2" : "men14b"
     },
     {
         "id" : 15,
         "gender" : "m",
-        "name" : "pants3",
+        "name" : "Sunny Joggers",
         "type" : "pants",
         "price" : 37,
+        "sizes" : [28, 30, 32, 34, 36, 38],
         "stock" : {
-            "28" : {
-                "size" : 28,
-                "quantity" : 20   
-            },
-            "30" : {
-                "size" : 30,
-                "quantity" : 20   
-            },
-            "32" : {
-                "size" : 32,
-                "quantity" : 35   
-            },
-            "34" : {
-                "size" : 34,
-                "quantity" : 30   
-            },
-            "36" : {
-                "size" : 36,
-                "quantity" : 20   
-            },
-            "38" : {
-                "size" : 38,
-                "quantity" : 15   
-            }
+            "28" : 20,
+            "30" : 25,
+            "32" : 35,
+            "34" : 35,
+            "36" : 35,
+            "38" : 20
         },
-        "img1" : "men3a",
-        "img2" : "men3b"
+        "img1" : "men15a",
+        "img2" : "men15b"
     },
     {
         "id" : 16,
         "gender" : "m",
-        "name" : "pants1",
+        "name" : "Wild Pants",
         "type" : "pants",
         "price" : 40,
+        "sizes" : [28, 30, 32, 34, 36, 38],
         "stock" : {
-            "28" : {
-                "size" : 28,
-                "quantity" : 20   
-            },
-            "30" : {
-                "size" : 30,
-                "quantity" : 20   
-            },
-            "32" : {
-                "size" : 32,
-                "quantity" : 35   
-            },
-            "34" : {
-                "size" : 34,
-                "quantity" : 30   
-            },
-            "36" : {
-                "size" : 36,
-                "quantity" : 20   
-            },
-            "38" : {
-                "size" : 38,
-                "quantity" : 15   
-            }
+            "28" : 20,
+            "30" : 25,
+            "32" : 35,
+            "34" : 35,
+            "36" : 35,
+            "38" : 20
         },
-        "img1" : "men3a",
-        "img2" : "men3b"
+        "img1" : "men16a",
+        "img2" : "men16b"
     },
     {
         "id" : 17,
         "gender" : "m",
-        "name" : "pants2",
+        "name" : "Skating Jeans",
         "type" : "pants",
         "price" : 35,
+        "sizes" : [28, 30, 32, 34, 36, 38],
         "stock" : {
-            "28" : {
-                "size" : 28,
-                "quantity" : 20   
-            },
-            "30" : {
-                "size" : 30,
-                "quantity" : 20   
-            },
-            "32" : {
-                "size" : 32,
-                "quantity" : 35   
-            },
-            "34" : {
-                "size" : 34,
-                "quantity" : 30   
-            },
-            "36" : {
-                "size" : 36,
-                "quantity" : 20   
-            },
-            "38" : {
-                "size" : 38,
-                "quantity" : 15   
-            }
+            "28" : 20,
+            "30" : 25,
+            "32" : 35,
+            "34" : 35,
+            "36" : 35,
+            "38" : 20
         },
-        "img1" : "men3a",
-        "img2" : "men3b"
+        "img1" : "men17a",
+        "img2" : "men17b"
     },
     {
         "id" : 18,
         "gender" : "m",
-        "name" : "pants3",
+        "name" : "Color Shorts",
         "type" : "pants",
         "price" : 37,
+        "sizes" : [28, 30, 32, 34, 36, 38],
         "stock" : {
-            "28" : {
-                "size" : 28,
-                "quantity" : 20   
-            },
-            "30" : {
-                "size" : 30,
-                "quantity" : 20   
-            },
-            "32" : {
-                "size" : 32,
-                "quantity" : 35   
-            },
-            "34" : {
-                "size" : 34,
-                "quantity" : 30   
-            },
-            "36" : {
-                "size" : 36,
-                "quantity" : 20   
-            },
-            "38" : {
-                "size" : 38,
-                "quantity" : 15   
-            }
+            "28" : 20,
+            "30" : 25,
+            "32" : 35,
+            "34" : 35,
+            "36" : 35,
+            "38" : 20
         },
-        "img1" : "men3a",
-        "img2" : "men3b"
+        "img1" : "men18a",
+        "img2" : "men18b"
     },
     {
         "id" : 19,
@@ -687,44 +417,104 @@ const shoes = [
     {
         "id" : 22,
         "gender" : "m",
-        "name" : "shoes1",
+        "name" : "Modern Brown",
         "type" : "shoes",
         "price" : 60,
-        "stock" : {
+        "sizes" : [8, 9, 10, 11, 12],
+        "stock" : [{
             "8" : 20,
             "9" : 20,
             "10" : 35,
             "11" : 30,
             "12" : 20
-        }
+        }],
+        "img1" : "men22",
+        "img2" : "men22"
     },
     {
         "id" : 23,
         "gender" : "m",
-        "name" : "shoes2",
+        "name" : "Modern Dark",
         "type" : "shoes",
         "price" : 65,
-        "stock" : {
+        "sizes" : [8, 9, 10, 11, 12],
+        "stock" : [{
             "8" : 20,
             "9" : 20,
             "10" : 35,
             "11" : 30,
             "12" : 20
-        }
+        }],
+        "img1" : "men23",
+        "img2" : "men23"
     },
     {
         "id" : 24,
         "gender" : "m",
-        "name" : "shoes3",
+        "name" : "New Tennis",
         "type" : "shoes",
         "price" : 55,
-        "stock" : {
+        "sizes" : [8, 9, 10, 11, 12],
+        "stock" : [{
             "8" : 20,
             "9" : 20,
             "10" : 35,
             "11" : 30,
             "12" : 20
-        }
+        }],
+        "img1" : "men24",
+        "img2" : "men24"
+    },
+    {
+        "id" : 25,
+        "gender" : "m",
+        "name" : "Classic Shoes",
+        "type" : "shoes",
+        "price" : 55,
+        "sizes" : [8, 9, 10, 11, 12],
+        "stock" : [{
+            "8" : 20,
+            "9" : 20,
+            "10" : 35,
+            "11" : 30,
+            "12" : 20
+        }],
+        "img1" : "men25",
+        "img2" : "men25"
+    },
+    {
+        "id" : 26,
+        "gender" : "m",
+        "name" : "Classic Olive",
+        "type" : "shoes",
+        "price" : 55,
+        "sizes" : [8, 9, 10, 11, 12],
+        "stock" : [{
+            "8" : 20,
+            "9" : 20,
+            "10" : 35,
+            "11" : 30,
+            "12" : 20
+        }],
+        "img1" : "men26",
+        "img2" : "men26"
+    },
+    {
+        "id" : 27,
+        "gender" : "m",
+        "name" : "Classic Black",
+        "type" : "shoes",
+        "price" : 55,
+        "sizes" : [8, 9, 10, 11, 12],
+        "stock" : [{
+            "8" : 20,
+            "9" : 20,
+            "10" : 35,
+            "11" : 30,
+            "12" : 20
+        }],
+        "img1" : "men27",
+        "img2" : "men27"
     },
     {
         "id" : 25,
