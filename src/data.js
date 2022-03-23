@@ -113,7 +113,7 @@ const shirts = [
     {
         "id" : 7,
         "gender" : "f",
-        "name" : "femaleShirt1",
+        "name" : "Brown Classic",
         "type" : "shirt",
         "price" : 45,
         "sizes" : ["XS", "S", "M", "L", "XL"],
@@ -124,11 +124,13 @@ const shirts = [
             "l" : 30,
             "xl" : 20
         }],
+        "img1" : "women7a",
+        "img2" : "women7b"
     },
     {
         "id" : 8,
         "gender" : "f",
-        "name" : "femaleShirt2",
+        "name" : "Wide Pink",
         "type" : "shirt",
         "price" : 55,
         "sizes" : ["XS", "S", "M", "L", "XL"],
@@ -139,11 +141,13 @@ const shirts = [
             "l" : 30,
             "xl" : 20
         }],
+        "img1" : "women8a",
+        "img2" : "women8b"
     },
     {
         "id" : 9,
         "gender" : "f",
-        "name" : "femaleShirt3",
+        "name" : "Pure White",
         "type" : "shirt",
         "price" : 50,
         "sizes" : ["XS", "S", "M", "L", "XL"],
@@ -154,11 +158,64 @@ const shirts = [
             "l" : 30,
             "xl" : 20
         }],
+        "img1" : "women9a",
+        "img2" : "women9b"
     },
     {
         "id" : 10,
+        "gender" : "f",
+        "name" : "Blue Nature",
+        "type" : "shirt",
+        "price" : 70,
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }],
+        "img1" : "women10a",
+        "img2" : "women10b"
+    },
+    {
+        "id" : 11,
+        "gender" : "f",
+        "name" : "Sunset",
+        "type" : "shirt",
+        "price" : 75,
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }],
+        "img1" : "women11a",
+        "img2" : "women11b"
+    },
+    {
+        "id" : 12,
+        "gender" : "f",
+        "name" : "Wide Shirt",
+        "type" : "shirt",
+        "price" : 60,
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }],
+        "img1" : "women12a",
+        "img2" : "women12b"
+    },
+    {
+        "id" : 37,
         "gender" : "k",
-        "name" : "kidsShirt1",
+        "name" : "Vintage Shirt",
         "type" : "shirt",
         "price" : 25,
         "sizes" : ["XS", "S", "M", "L", "XL"],
@@ -169,11 +226,13 @@ const shirts = [
             "l" : 30,
             "xl" : 20
         }],
+        "img1" : "kids37a",
+        "img2" : "kids37b"
     },
     {
-        "id" : 11,
+        "id" : 38,
         "gender" : "k",
-        "name" : "kidsShirt2",
+        "name" : "Roses in White",
         "type" : "shirt",
         "price" : 30,
         "sizes" : ["XS", "S", "M", "L", "XL"],
@@ -184,11 +243,13 @@ const shirts = [
             "l" : 30,
             "xl" : 20
         }],
+        "img1" : "kids38a",
+        "img2" : "kids38b"
     },
     {
-        "id" : 12,
+        "id" : 39,
         "gender" : "k",
-        "name" : "kidsShirt3",
+        "name" : "White Regular",
         "type" : "shirt",
         "price" : 27,
         "sizes" : ["XS", "S", "M", "L", "XL"],
@@ -198,9 +259,95 @@ const shirts = [
             "m" : 35,
             "l" : 30,
             "xl" : 20
-        }]
+        }],
+        "img1" : "kids39a",
+        "img2" : "kids39b"
     },
-
+    {
+        "id" : 40,
+        "gender" : "k",
+        "name" : "Jumper Set",
+        "type" : "shirt",
+        "price" : 25,
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }],
+        "img1" : "kids40a",
+        "img2" : "kids40b"
+    },
+    {
+        "id" : 41,
+        "gender" : "k",
+        "name" : "Colorful Dress",
+        "type" : "shirt",
+        "price" : 30,
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }],
+        "img1" : "kids41a",
+        "img2" : "kids41b"
+    },
+    {
+        "id" : 42,
+        "gender" : "k",
+        "name" : "Brownie Gray",
+        "type" : "shirt",
+        "price" : 30,
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }],
+        "img1" : "kids42a",
+        "img2" : "kids42b"
+    },
+    {
+        "id" : 43,
+        "gender" : "k",
+        "name" : "Snowy Sweater",
+        "type" : "shirt",
+        "price" : 35,
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }],
+        "img1" : "kids43a",
+        "img2" : "kids43b"
+    },
+    {
+        "id" : 44,
+        "gender" : "k",
+        "name" : "Senior Shirt",
+        "type" : "shirt",
+        "price" : 33,
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : [{
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        }],
+        "img1" : "kids44a",
+        "img2" : "kids44b"
+    }
 ]
 
 exports.shirts = shirts;
@@ -318,9 +465,10 @@ const pants = [
     {
         "id" : 19,
         "gender" : "f",
-        "name" : "femalePants1",
+        "name" : "Casual Jeans",
         "type" : "pants",
         "price" : 60,
+        "sizes" : [0, 2, 4, 6, 8],
         "stock" : {
             "2" : 20,
             "4" : 20,
@@ -328,14 +476,17 @@ const pants = [
             "8" : 30,
             "10" : 20,
             "12" : 15
-        }
+        },
+        "img1" : "women19a",
+        "img2" : "women19b"
     },
     {
         "id" : 20,
         "gender" : "f",
-        "name" : "femalePants2",
+        "name" : "Extreme Blue",
         "type" : "pants",
         "price" : 65,
+        "sizes" : [0, 2, 4, 6, 8],
         "stock" : {
             "2" : 20,
             "4" : 20,
@@ -343,14 +494,17 @@ const pants = [
             "8" : 30,
             "10" : 20,
             "12" : 15
-        }
+        },
+        "img1" : "women20a",
+        "img2" : "women20b"
     },
     {
         "id" : 21,
         "gender" : "f",
-        "name" : "femalePants3",
+        "name" : "Dark Jeans",
         "type" : "pants",
         "price" : 63,
+        "sizes" : [0, 2, 4, 6, 8],
         "stock" : {
             "2" : 20,
             "4" : 20,
@@ -358,58 +512,278 @@ const pants = [
             "8" : 30,
             "10" : 20,
             "12" : 15
-        }
+        },
+        "img1" : "women21a",
+        "img2" : "women21b"
     },
     {
         "id" : 22,
-        "gender" : "k",
-        "name" : "kidsPants1",
+        "gender" : "f",
+        "name" : "Wilderness",
         "type" : "pants",
-        "price" : 30,
+        "price" : 60,
+        "sizes" : [0, 2, 4, 6, 8],
         "stock" : {
+            "2" : 20,
+            "4" : 20,
+            "6" : 35,
+            "8" : 30,
             "10" : 20,
-            "12" : 20,
-            "14" : 35,
-            "16" : 30,
-            "18" : 20,
-        }
+            "12" : 15
+        },
+        "img1" : "women22a",
+        "img2" : "women22b"
     },
     {
         "id" : 23,
-        "gender" : "k",
-        "name" : "kidsPants2",
+        "gender" : "f",
+        "name" : "Casual Joggers",
         "type" : "pants",
-        "price" : 33,
+        "price" : 65,
+        "sizes" : [0, 2, 4, 6, 8],
         "stock" : {
+            "2" : 20,
+            "4" : 20,
+            "6" : 35,
+            "8" : 30,
             "10" : 20,
-            "12" : 20,
-            "14" : 35,
-            "16" : 30,
-            "18" : 20,
-        }
+            "12" : 15
+        },
+        "img1" : "women23a",
+        "img2" : "women23b"
     },
     {
         "id" : 24,
-        "gender" : "k",
-        "name" : "kidsPants3",
+        "gender" : "f",
+        "name" : "Black Sight",
         "type" : "pants",
-        "price" : 28,
+        "price" : 63,
+        "sizes" : [0, 2, 4, 6, 8],
+        "stock" : {
+            "2" : 20,
+            "4" : 20,
+            "6" : 35,
+            "8" : 30,
+            "10" : 20,
+            "12" : 15
+        },
+        "img1" : "women24a",
+        "img2" : "women24b"
+    },
+    {
+        "id" : 45,
+        "gender" : "k",
+        "name" : "Gray Youth",
+        "type" : "pants",
+        "price" : 30,
+        "sizes" : [10, 12, 14, 16, 18],
         "stock" : {
             "10" : 20,
             "12" : 20,
             "14" : 35,
             "16" : 30,
             "18" : 20,
-        }
+        },
+        "img1" : "kids45a",
+        "img2" : "kids45b"
+    },
+    {
+        "id" : 46,
+        "gender" : "k",
+        "name" : "Autumn Dress",
+        "type" : "pants",
+        "price" : 33,
+        "sizes" : [10, 12, 14, 16, 18],
+        "stock" : {
+            "10" : 20,
+            "12" : 20,
+            "14" : 35,
+            "16" : 30,
+            "18" : 20,
+        },
+        "img1" : "kids46a",
+        "img2" : "kids46b"
+    },
+    {
+        "id" : 47,
+        "gender" : "k",
+        "name" : "Blue Spring",
+        "type" : "pants",
+        "price" : 28,
+        "sizes" : [10, 12, 14, 16, 18],
+        "stock" : {
+            "10" : 20,
+            "12" : 20,
+            "14" : 35,
+            "16" : 30,
+            "18" : 20,
+        },
+        "img1" : "kids47a",
+        "img2" : "kids47b"
+    },
+    {
+        "id" : 48,
+        "gender" : "k",
+        "name" : "Autumn Overall",
+        "type" : "pants",
+        "price" : 30,
+        "sizes" : [10, 12, 14, 16, 18],
+        "stock" : {
+            "10" : 20,
+            "12" : 20,
+            "14" : 35,
+            "16" : 30,
+            "18" : 20,
+        },
+        "img1" : "kids48a",
+        "img2" : "kids48b"
+    },
+    {
+        "id" : 49,
+        "gender" : "k",
+        "name" : "Clue Blue",
+        "type" : "pants",
+        "price" : 33,
+        "sizes" : [10, 12, 14, 16, 18],
+        "stock" : {
+            "10" : 20,
+            "12" : 20,
+            "14" : 35,
+            "16" : 30,
+            "18" : 20,
+        },
+        "img1" : "kids49a",
+        "img2" : "kids49b"
+    },
+    {
+        "id" : 50,
+        "gender" : "k",
+        "name" : "Music Dress",
+        "type" : "pants",
+        "price" : 35,
+        "sizes" : [10, 12, 14, 16, 18],
+        "stock" : {
+            "10" : 20,
+            "12" : 20,
+            "14" : 35,
+            "16" : 30,
+            "18" : 20,
+        },
+        "img1" : "kids50a",
+        "img2" : "kids50b"
     }
 
 ]
 
-
-
 exports.pants = pants;
 
 
+const dresses = [
+    {
+        "id" : 25,
+        "gender" : "f",
+        "name" : "Checkered Dress",
+        "type" : "dresses",
+        "price" : 70,
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        },
+        "img1" : "women25a",
+        "img2" : "women25b"
+    },
+    {
+        "id" : 26,
+        "gender" : "f",
+        "name" : "Black Dress",
+        "type" : "dresses",
+        "price" : 75,
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        },
+        "img1" : "women26a",
+        "img2" : "women26b"
+    },
+    {
+        "id" : 27,
+        "gender" : "f",
+        "name" : "Red Nature",
+        "type" : "dresses",
+        "price" : 75,
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        },
+        "img1" : "women27a",
+        "img2" : "women27b"
+    },
+    {
+        "id" : 28,
+        "gender" : "f",
+        "name" : "Long Dress",
+        "type" : "dresses",
+        "price" : 70,
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        },
+        "img1" : "women28a",
+        "img2" : "women28b"
+    },
+    {
+        "id" : 29,
+        "gender" : "f",
+        "name" : "Short Dress",
+        "type" : "dresses",
+        "price" : 68,
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        },
+        "img1" : "women29a",
+        "img2" : "women29b"
+    },
+    {
+        "id" : 30,
+        "gender" : "f",
+        "name" : "Leaves Dress",
+        "type" : "dresses",
+        "price" : 75,
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+        "stock" : {
+            "xs" : 20,
+            "s" : 20,
+            "m" : 35,
+            "l" : 30,
+            "xl" : 20
+        },
+        "img1" : "women30a",
+        "img2" : "women30b"
+    }
+]
+
+exports.dresses = dresses;
 
 
 const shoes = [
@@ -421,13 +795,13 @@ const shoes = [
         "type" : "shoes",
         "price" : 60,
         "sizes" : [8, 9, 10, 11, 12],
-        "stock" : [{
+        "stock" : {
             "8" : 20,
             "9" : 20,
             "10" : 35,
             "11" : 30,
             "12" : 20
-        }],
+        },
         "img1" : "men22",
         "img2" : "men22"
     },
@@ -438,13 +812,13 @@ const shoes = [
         "type" : "shoes",
         "price" : 65,
         "sizes" : [8, 9, 10, 11, 12],
-        "stock" : [{
+        "stock" : {
             "8" : 20,
             "9" : 20,
             "10" : 35,
             "11" : 30,
             "12" : 20
-        }],
+        },
         "img1" : "men23",
         "img2" : "men23"
     },
@@ -455,13 +829,13 @@ const shoes = [
         "type" : "shoes",
         "price" : 55,
         "sizes" : [8, 9, 10, 11, 12],
-        "stock" : [{
+        "stock" : {
             "8" : 20,
             "9" : 20,
             "10" : 35,
             "11" : 30,
             "12" : 20
-        }],
+        },
         "img1" : "men24",
         "img2" : "men24"
     },
@@ -470,15 +844,15 @@ const shoes = [
         "gender" : "m",
         "name" : "Classic Shoes",
         "type" : "shoes",
-        "price" : 55,
+        "price" : 65,
         "sizes" : [8, 9, 10, 11, 12],
-        "stock" : [{
+        "stock" : {
             "8" : 20,
             "9" : 20,
             "10" : 35,
             "11" : 30,
             "12" : 20
-        }],
+        },
         "img1" : "men25",
         "img2" : "men25"
     },
@@ -487,15 +861,15 @@ const shoes = [
         "gender" : "m",
         "name" : "Classic Olive",
         "type" : "shoes",
-        "price" : 55,
+        "price" : 67,
         "sizes" : [8, 9, 10, 11, 12],
-        "stock" : [{
+        "stock" : {
             "8" : 20,
             "9" : 20,
             "10" : 35,
             "11" : 30,
             "12" : 20
-        }],
+        },
         "img1" : "men26",
         "img2" : "men26"
     },
@@ -504,153 +878,243 @@ const shoes = [
         "gender" : "m",
         "name" : "Classic Black",
         "type" : "shoes",
-        "price" : 55,
+        "price" : 70,
         "sizes" : [8, 9, 10, 11, 12],
-        "stock" : [{
+        "stock" : {
             "8" : 20,
             "9" : 20,
             "10" : 35,
             "11" : 30,
             "12" : 20
-        }],
+        },
         "img1" : "men27",
         "img2" : "men27"
     },
     {
-        "id" : 25,
+        "id" : 31,
         "gender" : "f",
-        "name" : "femaleShoes1",
-        "type" : "shoes",
-        "price" : 50,
-        "stock" : {
-            "5" : 20,
-            "6" : 20,
-            "7" : 35,
-            "8" : 30,
-            "9" : 20
-        }
-    },
-    {
-        "id" : 26,
-        "gender" : "f",
-        "name" : "femaleShoes2",
-        "type" : "shoes",
-        "price" : 54,
-        "stock" : {
-            "5" : 20,
-            "6" : 20,
-            "7" : 35,
-            "8" : 30,
-            "9" : 20
-        }
-    },
-    {
-        "id" : 27,
-        "gender" : "f",
-        "name" : "femaleShoes3",
+        "name" : "Classic Heels",
         "type" : "shoes",
         "price" : 60,
+        "sizes" : [5, 6, 7, 8, 9],
         "stock" : {
             "5" : 20,
             "6" : 20,
             "7" : 35,
             "8" : 30,
             "9" : 20
-        }
+        },
+        "img1" : "women31a",
+        "img2" : "women31b"
     },
     {
-        "id" : 28,
-        "gender" : "k",
-        "name" : "kidsShoes1",
+        "id" : 32,
+        "gender" : "f",
+        "name" : "Red Passion",
         "type" : "shoes",
-        "price" : 20,
+        "price" : 65,
+        "sizes" : [5, 6, 7, 8, 9],
         "stock" : {
-            "1" : 20,
-            "2" : 20,
-            "3" : 35,
-            "4" : 30,
-            "5" : 20
-        }
+            "5" : 20,
+            "6" : 20,
+            "7" : 35,
+            "8" : 30,
+            "9" : 20
+        },
+        "img1" : "women32a",
+        "img2" : "women32b"
     },
     {
-        "id" : 29,
-        "gender" : "k",
-        "name" : "kidsShoes2",
+        "id" : 33,
+        "gender" : "f",
+        "name" : "Sports Tennis",
         "type" : "shoes",
-        "price" : 23,
+        "price" : 50,
+        "sizes" : [5, 6, 7, 8, 9],
         "stock" : {
-            "1" : 20,
-            "2" : 20,
-            "3" : 35,
-            "4" : 30,
-            "5" : 20
-        }
+            "5" : 20,
+            "6" : 20,
+            "7" : 35,
+            "8" : 30,
+            "9" : 20
+        },
+        "img1" : "women33a",
+        "img2" : "women33b"
     },
     {
-        "id" : 30,
+        "id" : 34,
+        "gender" : "f",
+        "name" : "Cinderellas",
+        "type" : "shoes",
+        "price" : 68,
+        "sizes" : [5, 6, 7, 8, 9],
+        "stock" : {
+            "5" : 20,
+            "6" : 20,
+            "7" : 35,
+            "8" : 30,
+            "9" : 20
+        },
+        "img1" : "women34a",
+        "img2" : "women34b"
+    },
+    {
+        "id" : 35,
+        "gender" : "f",
+        "name" : "White Freedom",
+        "type" : "shoes",
+        "price" : 54,
+        "sizes" : [5, 6, 7, 8, 9],
+        "stock" : {
+            "5" : 20,
+            "6" : 20,
+            "7" : 35,
+            "8" : 30,
+            "9" : 20
+        },
+        "img1" : "women35a",
+        "img2" : "women35b"
+    },
+    {
+        "id" : 36,
+        "gender" : "f",
+        "name" : "Nature Boots",
+        "type" : "shoes",
+        "price" : 60,
+        "sizes" : [5, 6, 7, 8, 9],
+        "stock" : {
+            "5" : 20,
+            "6" : 20,
+            "7" : 35,
+            "8" : 30,
+            "9" : 20
+        },
+        "img1" : "women36a",
+        "img2" : "women36b"
+    },
+    {
+        "id" : 51,
         "gender" : "k",
-        "name" : "kidsShoes3",
+        "name" : "Classic Ones",
         "type" : "shoes",
         "price" : 25,
+        "sizes" : [1, 2, 3, 4, 5],
         "stock" : {
             "1" : 20,
             "2" : 20,
             "3" : 35,
             "4" : 30,
             "5" : 20
-        }
+        },
+        "img1" : "kids51a",
+        "img2" : "kids51b"
+    },
+    {
+        "id" : 52,
+        "gender" : "k",
+        "name" : "All Around Boots",
+        "type" : "shoes",
+        "price" : 35,
+        "sizes" : [1, 2, 3, 4, 5],
+        "stock" : {
+            "1" : 20,
+            "2" : 20,
+            "3" : 35,
+            "4" : 30,
+            "5" : 20
+        },
+        "img1" : "kids52a",
+        "img2" : "kids52b"
+    },
+    {
+        "id" : 53,
+        "gender" : "k",
+        "name" : "Sports Fem",
+        "type" : "shoes",
+        "price" : 30,
+        "sizes" : [1, 2, 3, 4, 5],
+        "stock" : {
+            "1" : 20,
+            "2" : 20,
+            "3" : 35,
+            "4" : 30,
+            "5" : 20
+        },
+        "img1" : "kids53a",
+        "img2" : "kids53b"
+    },
+    {
+        "id" : 54,
+        "gender" : "k",
+        "name" : "All Around Tennis",
+        "type" : "shoes",
+        "price" : 25,
+        "sizes" : [1, 2, 3, 4, 5],
+        "stock" : {
+            "1" : 20,
+            "2" : 20,
+            "3" : 35,
+            "4" : 30,
+            "5" : 20
+        },
+        "img1" : "kids54a",
+        "img2" : "kids54b"
+    },
+    {
+        "id" : 55,
+        "gender" : "k",
+        "name" : "White Sneakers",
+        "type" : "shoes",
+        "price" : 30,
+        "sizes" : [1, 2, 3, 4, 5],
+        "stock" : {
+            "1" : 20,
+            "2" : 20,
+            "3" : 35,
+            "4" : 30,
+            "5" : 20
+        },
+        "img1" : "kids55a",
+        "img2" : "kids55b"
+    },
+    {
+        "id" : 56,
+        "gender" : "k",
+        "name" : "Classic Teen",
+        "type" : "shoes",
+        "price" : 35,
+        "sizes" : [1, 2, 3, 4, 5],
+        "stock" : {
+            "1" : 20,
+            "2" : 20,
+            "3" : 35,
+            "4" : 30,
+            "5" : 20
+        },
+        "img1" : "kids56a",
+        "img2" : "kids56b"
+    },
+    {
+        "id" : 57,
+        "gender" : "k",
+        "name" : "Sports Mas",
+        "type" : "shoes",
+        "price" : 28,
+        "sizes" : [1, 2, 3, 4, 5],
+        "stock" : {
+            "1" : 20,
+            "2" : 20,
+            "3" : 35,
+            "4" : 30,
+            "5" : 20
+        },
+        "img1" : "kids57a",
+        "img2" : "kids57b"
     }
 ]
 
 exports.shoes = shoes;
 
-
-const dresses = [
-    {
-        "id" : 31,
-        "gender" : "f",
-        "name" : "dress1",
-        "type" : "dresses",
-        "price" : 70,
-        "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
-        }
-    },
-    {
-        "id" : 32,
-        "gender" : "f",
-        "name" : "dress2",
-        "type" : "dresses",
-        "price" : 75,
-        "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
-        }
-    },
-    {
-        "id" : 33,
-        "gender" : "f",
-        "name" : "dress3",
-        "type" : "dresses",
-        "price" : 75,
-        "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
-        }
-    }
-]
-
-exports.dresses = dresses;
 
 const beachWear = [
     {
