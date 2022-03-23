@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const shop = Router();
-const { shirts, pants, shoes, dresses, beachWear } = require("../data");
+const { shirts, pants, shoes, dresses } = require("../data");
 
 /**
  * 1)
@@ -47,8 +47,6 @@ shop.get("/men/shoes", function(req, res) {
 })
 
 
-
-
 /**
  * 4)
  * Name : Load Shirts Women
@@ -62,7 +60,6 @@ shop.get("/men/shoes", function(req, res) {
     return res.send({ status:"ok", msg: "Women's shirts found", womensShirtsCatalogue });
     
 })
-
 
 
 /**
@@ -94,6 +91,7 @@ shop.get("/men/shoes", function(req, res) {
     
 })
 
+
 /**
  * 7)
  * Name : Load Shoes Women
@@ -107,8 +105,6 @@ shop.get("/men/shoes", function(req, res) {
     return res.send({ status:"ok", msg: "Women's shoes found", womensShoesCatalogue });
     
 })
-
-
 
 
 /**
@@ -127,7 +123,6 @@ shop.get("/men/shoes", function(req, res) {
 })
 
 
-
 /**
  * 9)
  * Name : Load Pants Kids
@@ -142,7 +137,6 @@ shop.get("/men/shoes", function(req, res) {
     return res.send({ status:"ok", msg: "Kids' Pants found", kidsPantsCatalogue });
     
 })
-
 
 
 /**

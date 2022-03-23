@@ -13,6 +13,7 @@ const Puerto = require("./modelos/puerto");
 
 // Main routes for APIs
 const { shop } = require("./routes/shop")
+const { users } = require("./routes/users")
 
 
         
@@ -28,6 +29,7 @@ require("dotenv").config();
 
 // APIs 
 app.use("/shop", shop);
+app.use("/users", users);
 
 
 /*

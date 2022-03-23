@@ -1116,95 +1116,6 @@ const shoes = [
 exports.shoes = shoes;
 
 
-const beachWear = [
-    {
-        "id" : 34,
-        "gender" : "m",
-        "name" : "swimwear1",
-        "type" : "beachwear",
-        "price" : 45,
-        "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
-        }
-    },
-    {
-        "id" : 35,
-        "gender" : "m",
-        "name" : "swimwear2",
-        "type" : "beachwear",
-        "price" : 40,
-        "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
-        }
-    },
-    {
-        "id" : 36,
-        "gender" : "m",
-        "name" : "swimwear3",
-        "type" : "beachwear",
-        "price" : 42,
-        "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
-        }
-    },
-    {
-        "id" : 37,
-        "gender" : "f",
-        "name" : "bikini1",
-        "type" : "beachwear",
-        "price" : 55,
-        "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
-        }
-    },
-    {
-        "id" : 38,
-        "gender" : "f",
-        "name" : "bikini2",
-        "type" : "beachwear",
-        "price" : 60,
-        "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
-        }
-    },
-    {
-        "id" : 39,
-        "gender" : "f",
-        "name" : "bikini3",
-        "type" : "beachwear",
-        "price" : 65,
-        "stock" : {
-            "xs" : 20,
-            "s" : 20,
-            "m" : 35,
-            "l" : 30,
-            "xl" : 20
-        }
-    }
-]
-
-exports.beachWear = beachWear;
-
 const newsletter = [
     {
         "first" : "Mario",
@@ -1219,7 +1130,7 @@ const newsletter = [
 
 exports.newsletter = newsletter;
 
-const users = [
+const userData = [
     {
         "first" : "Mario",
         "last" : "Gomez",
@@ -1242,7 +1153,7 @@ const users = [
     },
 ]
 
-exports.users = users;
+exports.userData = userData;
 
 const orders = [
     {
