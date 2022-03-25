@@ -1135,21 +1135,33 @@ const userData = [
         "first" : "Mario",
         "last" : "Gomez",
         "age" : "30",
-        "id" : "xxxxxxxx",
+        "document" : "xxxxxxxx",
         "email" : "magv181091@gmail.com",
         "birthdate" : "18/10/1991",
         "phone" : "3123456789",
-        "address" : "Calle 1 # 2 - 3"
+        "address" : "Calle 1 # 2 - 3",
+        "newsletter" : {
+            "offers" : true,
+            "nation" : true,
+            "news" : true
+
+        }
     },
     {
         "first" : "Natalia",
         "last" : "Alfonso",
         "age" : "30",
-        "id" : "xxxxxxxx",
+        "document" : "xxxxxxxx",
         "email" : "naty.alfonso@hotmail.com",
         "birthdate" : "29/12/1991",
         "phone" : "3001234567",
-        "address" : "Calle 1 # 2 - 3"
+        "address" : "Calle 1 # 2 - 3",
+        "newsletter" : {
+            "offers" : true,
+            "nation" : true,
+            "news" : true
+
+        }
     },
 ]
 

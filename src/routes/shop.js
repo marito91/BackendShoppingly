@@ -1,6 +1,15 @@
 const { Router } = require("express");
 const shop = Router();
 const { shirts, pants, shoes, dresses } = require("../data");
+const { shirtsModel } = require("../models/shirts");
+const { pantsModel } = require("../models/pants");
+const { dressesModel } = require("../models/dresses");
+const { shoesModel } = require("../models/shoes");
+const { usersModel } = require("../models/usersModel");
+/*
+const { compare } = require("bcryptjs");
+const { sign } = require("jsonwebtoken");
+*/
 
 /**
  * 1)
@@ -10,9 +19,16 @@ const { shirts, pants, shoes, dresses } = require("../data");
  */
 
 shop.get("/men/shirts", function(req, res) {
-    
-    const mensShirtsCatalogue = shirts.filter(shirt => shirt.gender === "m");
-    return res.send({ status:"ok", msg: "Men's shirts found", mensShirtsCatalogue });
+
+    shirtsModel.find({gender : "m"}, (error, products) => {
+        if (error) {
+            return res.send({ 
+                status: "error", 
+                msg: "Couldn't find shirts on database" });
+        } else {
+            res.send({ status: "ok", mensShirtsCatalogue: products })
+        }
+      });
     
 })
 
@@ -26,8 +42,15 @@ shop.get("/men/shirts", function(req, res) {
 
 shop.get("/men/pants", function(req, res) {
     
-    const mensPantsCatalogue = pants.filter(item => item.gender === "m");
-    return res.send({ status:"ok", msg: "Men's pants found", mensPantsCatalogue });
+    pantsModel.find({gender : "m"}, (error, products) => {
+        if (error) {
+            return res.send({ 
+                status: "error", 
+                msg: "Couldn't find pants on database" });
+        } else {
+            res.send({ status: "ok", mensPantsCatalogue: products })
+        }
+      });
     
 })
 
@@ -41,8 +64,15 @@ shop.get("/men/pants", function(req, res) {
 
 shop.get("/men/shoes", function(req, res) {
     
-    const mensShoesCatalogue = shoes.filter(item => item.gender === "m");
-    return res.send({ status:"ok", msg: "Men's shoes found", mensShoesCatalogue });
+    shoesModel.find({gender : "m"}, (error, products) => {
+        if (error) {
+            return res.send({ 
+                status: "error", 
+                msg: "Couldn't find shoes on database" });
+        } else {
+            res.send({ status: "ok", mensShoesCatalogue: products })
+        }
+      });
     
 })
 
@@ -55,9 +85,16 @@ shop.get("/men/shoes", function(req, res) {
  */
 
  shop.get("/women/shirts", function(req, res) {
-    
-    const womensShirtsCatalogue = shirts.filter(item => item.gender === "f");
-    return res.send({ status:"ok", msg: "Women's shirts found", womensShirtsCatalogue });
+
+    shirtsModel.find({gender : "f"}, (error, products) => {
+        if (error) {
+            return res.send({ 
+                status: "error", 
+                msg: "Couldn't find shirts on database" });
+        } else {
+            res.send({ status: "ok", womensShirtsCatalogue: products })
+        }
+      });
     
 })
 
@@ -71,8 +108,15 @@ shop.get("/men/shoes", function(req, res) {
 
  shop.get("/women/pants", function(req, res) {
     
-    const womensPantsCatalogue = pants.filter(item => item.gender === "f");
-    return res.send({ status:"ok", msg: "Women's pants found", womensPantsCatalogue });
+    pantsModel.find({gender : "f"}, (error, products) => {
+        if (error) {
+            return res.send({ 
+                status: "error", 
+                msg: "Couldn't find pants on database" });
+        } else {
+            res.send({ status: "ok", womensPantsCatalogue: products })
+        }
+      });
     
 })
 
@@ -86,8 +130,15 @@ shop.get("/men/shoes", function(req, res) {
 
  shop.get("/women/dresses", function(req, res) {
     
-    const womensDressesCatalogue = dresses.filter(item => item.gender === "f");
-    return res.send({ status:"ok", msg: "Women's dresses found", womensDressesCatalogue });
+    dressesModel.find({gender : "f"}, (error, products) => {
+        if (error) {
+            return res.send({ 
+                status: "error", 
+                msg: "Couldn't find dresses on database" });
+        } else {
+            res.send({ status: "ok", womensDressesCatalogue: products })
+        }
+      });
     
 })
 
@@ -101,8 +152,15 @@ shop.get("/men/shoes", function(req, res) {
 
  shop.get("/women/shoes", function(req, res) {
     
-    const womensShoesCatalogue = shoes.filter(item => item.gender === "f");
-    return res.send({ status:"ok", msg: "Women's shoes found", womensShoesCatalogue });
+    shoesModel.find({gender : "f"}, (error, products) => {
+        if (error) {
+            return res.send({ 
+                status: "error", 
+                msg: "Couldn't find shoes on database" });
+        } else {
+            res.send({ status: "ok", womensShoesCatalogue: products })
+        }
+      });
     
 })
 
@@ -116,9 +174,16 @@ shop.get("/men/shoes", function(req, res) {
 
 
  shop.get("/kids/shirts", function(req, res) {
-    
-    const kidsShirtsCatalogue = shirts.filter(item => item.gender === "k");
-    return res.send({ status:"ok", msg: "Kids' shirts found", kidsShirtsCatalogue });
+
+    shirtsModel.find({gender : "k"}, (error, products) => {
+        if (error) {
+            return res.send({ 
+                status: "error", 
+                msg: "Couldn't find shirts on database" });
+        } else {
+            res.send({ status: "ok", kidsShirtsCatalogue: products })
+        }
+      });
     
 })
 
@@ -133,15 +198,22 @@ shop.get("/men/shoes", function(req, res) {
 
  shop.get("/kids/pants", function(req, res) {
     
-    const kidsPantsCatalogue = pants.filter(item => item.gender === "k");
-    return res.send({ status:"ok", msg: "Kids' Pants found", kidsPantsCatalogue });
+    pantsModel.find({gender : "k"}, (error, products) => {
+        if (error) {
+            return res.send({ 
+                status: "error", 
+                msg: "Couldn't find pants on database" });
+        } else {
+            res.send({ status: "ok", kidsPantsCatalogue: products })
+        }
+      });
     
 })
 
 
 /**
  * 10)
- * Name : Load Pants Kids
+ * Name : Load Shoes Kids
  * Method : GET
  * Route : /kids
  */
@@ -149,8 +221,15 @@ shop.get("/men/shoes", function(req, res) {
 
  shop.get("/kids/shoes", function(req, res) {
     
-    const kidsShoesCatalogue = shoes.filter(item => item.gender === "k");
-    return res.send({ status:"ok", msg: "Kids' Shoes found", kidsShoesCatalogue });
+    shoesModel.find({gender : "k"}, (error, products) => {
+        if (error) {
+            return res.send({ 
+                status: "error", 
+                msg: "Couldn't find shoes on database" });
+        } else {
+            res.send({ status: "ok", kidsShoesCatalogue: products })
+        }
+      });
     
 })
 

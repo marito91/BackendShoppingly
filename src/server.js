@@ -2,7 +2,7 @@
 
 const express = require("express");
 const cors = require("cors"); 
-//const mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
 /* Reference
 const Usuario = require("./modelos/usuarioModel");
@@ -32,12 +32,13 @@ app.use("/shop", shop);
 app.use("/users", users);
 
 
-/*
+
 // Database connection
 mongoose.connect(process.env.MONGODB_SERVER_URL)
-.then(res => console.log("Conectado a base de datos"))
+.then(res => console.log("Connected to database"))
 .catch(error => console.log(error));
-*/
+
+
 
 app.get("/", function (req, res) {
     res.send("Main route")

@@ -13,7 +13,7 @@ const { newsletter, userData } = require("../data");
     
     const { crew } = req.body;
     console.log(crew)
-    res.send({estado : "ok", msg : `Subscribed`});
+    res.send({status : "ok", msg : `Subscribed`});
     
 })
 
