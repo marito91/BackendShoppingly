@@ -3,11 +3,6 @@ const { model, Schema } = require("mongoose");
 
 const usersSchema = new Schema(
     {
-        id : {
-            unique : true,
-            type : "number",
-            required : true
-        },
         first : {
             type : "string",
             required: true
@@ -21,7 +16,11 @@ const usersSchema = new Schema(
             required : true
         },
         birthdate : {
-            type : "number",
+            type : "string",
+            required : true
+        },
+        email : {
+            type : "string",
             required : true
         },
         phone : {
@@ -51,7 +50,10 @@ const usersSchema = new Schema(
         password : {
             type : "string",
             required : true
-        }
+        },
+    },
+    {
+        versionKey : false
     }
 );
 
