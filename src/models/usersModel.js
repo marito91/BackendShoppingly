@@ -1,3 +1,4 @@
+const { genSalt, hash } = require("bcryptjs");
 const { model, Schema } = require("mongoose");
 
 
@@ -27,6 +28,14 @@ const usersSchema = new Schema(
             type : "string",
             required : true
         },
+        country : {
+            type : "string",
+            required : true
+        },
+        city : {
+            type : "string",
+            required : true
+        },
         address : {
             type : "string",
             required : true
@@ -43,10 +52,6 @@ const usersSchema = new Schema(
             type : "boolean",
             required : true
         },
-        username : {
-            type : "string",
-            required : true
-        },
         password : {
             type : "string",
             required : true
@@ -56,6 +61,12 @@ const usersSchema = new Schema(
         versionKey : false
     }
 );
+
+usersSchema.pre("save", async function (next) {
+    const salt = await genSalt(10);
+    this.password = await hash(this.password, salt);
+    next();
+});
 
 const usersModel = model("users", usersSchema);
 

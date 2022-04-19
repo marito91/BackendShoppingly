@@ -2,7 +2,8 @@ const { Router } = require("express");
 const users = Router();
 const { newsletter, userData } = require("../data");
 const { usersModel } = require("../models/usersModel");
-var ObjectId = require('mongodb').ObjectId;
+const { compare } = require("bcryptjs");
+const { sign } = require("jsonwebtoken");
 
 
 /**
@@ -28,8 +29,9 @@ var ObjectId = require('mongodb').ObjectId;
                     last: userInfo.lastName,
                     document: "null",
                     phone: "null",
+                    country: "null", 
+                    city: "null", 
                     address: "null", 
-                    username: "null", 
                     password: "null", 
                     email: userInfo.email,
                     birthdate: userInfo.date,
@@ -89,8 +91,9 @@ var ObjectId = require('mongodb').ObjectId;
                     last: userInfo.lastName,
                     document: userInfo.document,
                     phone: userInfo.phone,
-                    address: userInfo.address, 
-                    username: userInfo.username, 
+                    country: userInfo.country, 
+                    city: userInfo.city, 
+                    address: userInfo.address,  
                     password: userInfo.password, 
                     email: userInfo.email,
                     birthdate: userInfo.date,
@@ -110,5 +113,39 @@ var ObjectId = require('mongodb').ObjectId;
     })
     
 })
+
+
+/**
+ * 3)
+ * Name : Login users
+ * Method : POST
+ * Route : /login
+ */
+
+ users.post("/login", async function (req, res) {
+    // Captures email / password
+    const { user } = req.body;
+    // Checks if the user exists in DB
+    const exists = await usersModel.findOne({ email: user.email });
+
+    if (!exists) {
+        return res.status(401).json({ status: "error", msg: `The email ${user.email} does not appear in our database.` })
+    }
+    // Compares password
+    const passOK = await compare(user.password, exists.password);
+    if (passOK === true) {
+        const token = sign(
+            {
+                email: exists.email,
+                rol: exists.perfil,
+                name: exists.first + " " + exists.last
+            },
+            process.env.JWT_SECRET_KEY
+        )
+        return res.status(200).json({ status: "ok", msg: "Logged in", token, url:"/" });
+    }
+    return res.status(401).json({ status: "error", msg: "ERROR: Wrong Credentials. 2" });
+    // Dar/denegar acceso
+});
 
 exports.users = users;
