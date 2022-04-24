@@ -1,22 +1,21 @@
 const { Router } = require("express");
-const users = Router();
-const { newsletter, userData } = require("../data");
-const { usersModel } = require("../models/usersModel");
+const orders = Router();
+const { ordersModel } = require("../models/ordersModel");
 const { compare } = require("bcryptjs");
 const { sign } = require("jsonwebtoken");
 
 
 /**
  * 1)
- * Name : Subscribe newsletter users
+ * Name : Create new orders
  * Method : POST
- * Route : /newsletter
+ * Route : /new_order
  */
 
- users.post("/newsletter", function(req, res) {
+ users.post("/new_order", function(req, res) {
     
-    const { userInfo } = req.body;
-    usersModel.findOne({email: userInfo.email}, function (error, oldUser) {
+    const { order } = req.body;
+    ordersModel.findOne({email: order.email}, function (error, oldUser) {
         if (error) {
             return res.send({ status: "error", msg: "Couldn't connect to database" });
         } else {
@@ -137,14 +136,7 @@ const { sign } = require("jsonwebtoken");
         const token = sign(
             {
                 email: exists.email,
-                first: exists.first,
-                last: exists.last,
-                document: exists.document,
-                address: exists.address,
-                birthdate: exists.birthdate,
-                phone: exists.phone,
-                city: exists.city,
-                country: exists.country
+                name: exists.first //+ " " + exists.last
             },
             process.env.JWT_SECRET_KEY
         )
