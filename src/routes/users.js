@@ -151,7 +151,6 @@ const { sign } = require("jsonwebtoken");
         return res.status(200).json({ status: "ok", msg: "Logged in", token, url:"/account" });
     }
     return res.status(401).json({ status: "error", msg: "ERROR: Wrong Credentials. 2" });
-    // Dar/denegar acceso
 });
 
 exports.users = users;

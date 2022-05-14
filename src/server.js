@@ -8,6 +8,7 @@ const mongoose = require("mongoose");
 // Main routes for APIs
 const { shop } = require("./routes/shop")
 const { users } = require("./routes/users")
+const { orders } = require("./routes/orders")
 
 
         
@@ -24,6 +25,7 @@ require("dotenv").config();
 // APIs 
 app.use("/shop", shop);
 app.use("/users", users);
+app.use("/orders", orders);
 
 
 

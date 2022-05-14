@@ -5,6 +5,12 @@ const { compare } = require("bcryptjs");
 const { sign } = require("jsonwebtoken");
 
 
+function createGuideNumber(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
 /**
  * 1)
  * Name : Create new orders
@@ -12,9 +18,84 @@ const { sign } = require("jsonwebtoken");
  * Route : /new_order
  */
 
- users.post("/new_order", function(req, res) {
-    
+ orders.post("/new_order", function(req, res) {    
     const { order } = req.body;
+    console.log(order)
+    /**
+     * email : "",
+     * date : "",
+     * firstName : "",
+     * lastName : "",
+     * phone : "",
+     * country : "",
+     * city : "",
+     * postalCode : "",
+     * address : "",
+     * apt : "",
+     * message : "",
+     * content : [],
+     * offers : false,
+     * express : false,
+     * tracking :false,
+     * status : "",
+     * guide : "",
+     * payment : false
+     */
+
+
+
+    // New object to create date
+    let date_ob = new Date();
+
+    // current date
+    // adjust 0 before single digit date
+    let date = ("0" + date_ob.getDate()).slice(-2);
+
+    // current month
+    let month = ("0" + (date_ob.getMonth() + 1)).slice(-2);
+
+    // current year
+    let year = date_ob.getFullYear();
+
+    // current hours
+    let hours = date_ob.getHours();
+
+    // current minutes
+    let minutes = date_ob.getMinutes();
+
+    // current seconds
+    let seconds = date_ob.getSeconds();
+
+    // prints date & time in YYYY-MM-DD HH:MM:SS format
+    const defDate = year + "-" + month + "-" + date// + " " + hours + ":" + minutes + ":" + seconds
+    //console.log(year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds);
+
+    const trackingNumber = JSON.stringify(createGuideNumber(1, 2000000000))
+
+    const specs = order.message === "" ? "none" : order.message
+
+    const newOrder = new ordersModel({
+        name : order.firstName + " " + order.lastName,
+        products : order.content,
+        date : defDate,
+        email : order.email,
+        phone : order.phone,
+        address : order.address + ", " + order.apt + ", " + order.city + ", " + order.country,
+        message : specs,
+        express : order.express,
+        guide : trackingNumber,
+        status : "Order created"
+    });
+
+    newOrder.save(function (error) {
+        if (error) {
+            console.log(error)
+            return res.send({ status: "error", msg: "Couldn't create new order"});
+        } else {
+            res.send({ status: "ok", msg: `Thank you for your order! Your tracking number is: ${trackingNumber}`, url:"/"})
+        }
+    });
+    /*
     ordersModel.findOne({email: order.email}, function (error, oldUser) {
         if (error) {
             return res.send({ status: "error", msg: "Couldn't connect to database" });
@@ -47,103 +128,40 @@ const { sign } = require("jsonwebtoken");
                 });
             }
         }
-    })
+    })*/
+
     
-})
+});
+
 
 
 /**
  * 2)
- * Name : Sign up new users
- * Method : POST
- * Route : /newUsers
+ * Name : Get user's most recent orders
+ * Method : GET
+ * Route : /recent_orders
  */
 
- users.post("/newUsers", function(req, res) {
-    
-        
-    const { userInfo } = req.body;
-    /** User information
-     *  firstName
-     * lastName
-     * document
-     * email
-     * date
-     * address
-     * phone
-     * username
-     * password
-     * offers
-     * ideas
-     * nation
-     */
-    usersModel.findOne({email: userInfo.email}, function (error, oldUser) {
+ orders.get("/recent_orders/:email", function(req, res) {    
+    //const { userData } = req.body;
+
+    const userData = req.params.email;
+    //let orders = [];
+  
+    ordersModel.find({email: userData}, function (error, orders) {
         if (error) {
             return res.send({ status: "error", msg: "Couldn't connect to database" });
         } else {
-            if (oldUser !== null && oldUser !== undefined && oldUser.email === userInfo.email) {
-                console.log(oldUser)
-                return res.send({ status: "ok", msg: `The email ${oldUser.email} is already registered in our database.` });
+            if (orders !== null && orders !== undefined) {
+                console.log(orders)
+                //orders.push(order)
+                return res.send({ status: "ok", msg: `We found the orders for the user ${userData}.`, orders });
             } else {
-                const newUser = new usersModel({
-                    first: userInfo.firstName, 
-                    last: userInfo.lastName,
-                    document: userInfo.document,
-                    phone: userInfo.phone,
-                    country: userInfo.country, 
-                    city: userInfo.city, 
-                    address: userInfo.address,  
-                    password: userInfo.password, 
-                    email: userInfo.email,
-                    birthdate: userInfo.date,
-                    offers: userInfo.offers,
-                    newsletter: userInfo.ideas,
-                    nation: userInfo.nation
-                });
-                newUser.save(function (error) {
-                    if (error) {
-                        console.log(error)
-                        return res.send({ status: "error", msg: "Couldn't register new user to database" });
-                    }
-                    res.send({ status: "ok", msg: "Thank you for subscribing! Welcome to the club!" });
-                });
+                return res.send({ status: "error", msg: `We didn't find the orders for the user ${userData}.` });
             }
         }
-    })
-    
-})
-
-
-/**
- * 3)
- * Name : Login users
- * Method : POST
- * Route : /login
- */
-
- users.post("/login", async function (req, res) {
-    // Captures email / password
-    const { user } = req.body;
-    // Checks if the user exists in DB
-    const exists = await usersModel.findOne({ email: user.email });
-
-    if (!exists) {
-        return res.status(401).json({ status: "error", msg: `The email ${user.email} does not appear in our database.` })
-    }
-    // Compares password
-    const passOK = await compare(user.password, exists.password);
-    if (passOK === true) {
-        const token = sign(
-            {
-                email: exists.email,
-                name: exists.first //+ " " + exists.last
-            },
-            process.env.JWT_SECRET_KEY
-        )
-        return res.status(200).json({ status: "ok", msg: "Logged in", token, url:"/account" });
-    }
-    return res.status(401).json({ status: "error", msg: "ERROR: Wrong Credentials. 2" });
-    // Dar/denegar acceso
+    })   
 });
 
-exports.users = users;
+
+exports.orders = orders;

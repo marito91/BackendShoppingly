@@ -3,9 +3,9 @@ const { model, Schema } = require("mongoose");
 
 const ordersSchema = new Schema(
     {
-        first : {
+        name : {
             type : "string",
-            required: true
+            required : true
         },
         products : {
             type : "array",
@@ -27,11 +27,15 @@ const ordersSchema = new Schema(
             type : "string",
             required : true
         },
-        name : {
+        message : {
             type : "string",
             required : true
         },
-        message : {
+        express : {
+            type : "boolean",
+            required : true
+        },
+        guide : {
             type : "string",
             required : true
         },
